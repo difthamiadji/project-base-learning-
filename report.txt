@@ -1,0 +1,16 @@
+  Laporan Statistika Sistem File
+----------------------------------
+Tanggal: Sun Nov  9 11:10:13 PM WITA 2025
+ 
+Jumlah File dan Direktori:
+12
+ 
+Ukuran Total Direktori:
+526M	.
+ 
+5 File Terbesar:
+181M	./.local/share/Trash/files/snap/firefox/common/.mozilla/firefox/rdtcc4f7.default/storage/default/https+++web.whatsapp.com/idb/2181795718meogdaerlo-ts.sqlite
+18M	./snap/firefox/common/.mozilla/firefox/gbqirdmk.default/storage/default/https+++web.whatsapp.com/idb/2181795718meogdaerlo-ts.sqlite
+14M	./snap/firefox/common/.mozilla/firefox/gbqirdmk.default/storage/permanent/chrome/idb/3870112724rsegmnoittet-es.sqlite
+13M	./.local/share/Trash/files/snap/firefox/common/.mozilla/firefox/rdtcc4f7.default/storage/permanent/chrome/idb/3870112724rsegmnoittet-es.sqlite
+12M	./snap/firefox/common/.cache/mozilla/firefox/gbqirdmk.default/startupCache/scriptCache.bin
