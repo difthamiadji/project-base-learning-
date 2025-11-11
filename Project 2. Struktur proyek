@@ -1,8 +1,7 @@
-
 dita@dita-VirtualBox:~$ mkdir project_sistem_operasi_D
-dita@dita-VirtualBox: $ cd project_sistem_operasi_D
-dita@dita-VirtualBox:~/project_sistem_operasi_D$ mkdir src doc data 
-dita@dita-VirtualBox:~/project_sistem_operasi_D
+dita@dita-VirtualBox:~$ cd project_sistem_operasi_D
+dita@dita-VirtualBox:~/project_sistem_operasi_D$
+dita@dita-VirtualBox:~/project_sistem_operasi_D$ mkdir src doc data
 dita@dita-VirtualBox:~/project_sistem_operasi_D$ touch README.md src/main.sh
 dita@dita-VirtualBox:~/project_sistem_operasi_D$ du -sh
 16K
