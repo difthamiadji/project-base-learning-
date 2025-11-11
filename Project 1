@@ -1,0 +1,51 @@
+#membuat struktur direktori
+dita@dita-VirtualBox:~$ mkdir documents images archives logs
+dita@dita-VirtualBox:~$ touch file1.doc file2.doc file3.doclogle4.doc file5.doc
+dita@dita-VirtualBox:~$ touch gambar1.jpg gambar2.jpg gambar3.jpg gambar4.jpg gambar5.jpg
+dita@dita-VirtualBox:~$ touch data1.zip data2.zip data3.zip data4.zip data5.zip
+dita@dita-VirtualBox:~$ touch log1.log log2.log log3.log lo4.log log5.log
+dita@dita-VirtualBox:~$ echo "documen 1" > file1.doc
+dita@dita-VirtualBox:~$ echo "documen 2" > file2.doc
+dita@dita-VirtualBox:~$ echo "documen 3" > file3.doc
+dita@dita-VirtualBox:~$ echo "documen 4" > file4.doc
+dita@dita-VirtualBox:~$ echo "documen 5" > file5.doc
+dita@dita-VirtualBox:~$ echo "foto 1" > gambar1.jpg
+dita@dita-VirtualBox:~$ echo "foto 2" > gambar2.jpg
+dita@dita-VirtualBox:~$ echo "foto 3" > gambar3.jpg
+dita@dita-VirtualBox:~$ echo "foto 4" > gambar4.jpg
+dita@dita-VirtualBox:~$ echo "foto 5" > gambar 5.jpg
+dita@dita-VirtualBox:~$ echo "file arsip 1" > data1.zip
+dita@dita-VirtualBox:~$ echo "file arsip 2" > data2.zip
+dita@dita-VirtualBox:~$ echo "file arsip 3" > data3.zip
+dita@dita-VirtualBox:~$ echo "file arsip 4" > data4.zip
+dita@dita-VirtualBox:~$ echo "file arsip 5" > data5.zip
+dita@dita-VirtualBox:~$ echo "log sistem 1" > log1.log
+dita@dita-VirtualBox:~$ echo "log sistem 2" > log2.log
+dita@dita-VirtualBox:~$ echo "log sistem 3" > log3.log
+dita@dita-VirtualBox:~$ echo "log sistem 4" > log4.log
+dita@dita-VirtualBox:~$ echo "log sistem 5" > log5.log
+
+#script organisasi file
+dita@dita-VirtualBox:~$ find . -type f -name "*.doc" -exec mv {} documents/ \;
+dita@dita-VirtualBox:~$ find . -type f -name "*.jpg" -exec mv {} images/ \;
+dita@dita-VirtualBox:~$ find . -type f -name "*.zip" -exec mv {} archives/ \;
+dita@dita-VirtualBox:~$ find . -type f -name "*.log" -exec cp {} logs/ \;
+
+#Fungsi Pencarian
+dita@dita-VirtualBox:~$ find ~/documents -type f -name "*file*"
+dita@dita-VirtualBox:~$ find ~/archives -type f -size -200k  -exec ls -lh {} \;
+dita@dita-VirtualBox:~$ find ~/logs -type f -exec grep -li "log sistem" {} \;
+
+#Generate Laporan
+dita@dita-VirtualBox:~$ echo   "Laporan Statistika Sistem File" >> report.txt 
+dita@dita-VirtualBox:~$ echo "----------------------------------" >> report.txt
+dita@dita-VirtualBox:~$ echo "Tanggal: $(date)" >> report.txt
+dita@dita-VirtualBox:~$ echo " " >> report.txt
+dita@dita-VirtualBox:~$ echo "Jumlah File dan Direktori:" >> report.txt
+dita@dita-VirtualBox:~$ ls | wc -l >> report.txt
+dita@dita-VirtualBox:~$ echo " " >> report.txt
+dita@dita-VirtualBox:~$ echo "Ukuran Total Direktori:" >> report.txt
+dita@dita-VirtualBox:~$ du -sh >> report.txt
+dita@dita-VirtualBox:~$ echo " " >> report.txt
+dita@dita-VirtualBox:~$ echo "5 File Terbesar:" >> report.txt
+dita@dita-VirtualBox:~$ find . -type f -exec du -ah {} + | sort -hr | head -n 5 >> report.txt
