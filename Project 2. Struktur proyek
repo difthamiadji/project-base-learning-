@@ -1,7 +1,15 @@
+#Membuat Direktori
 dita@dita-VirtualBox:~$ mkdir project_sistem_operasi_D
+
+#Masuk ke dalam Direktori tersebut
 dita@dita-VirtualBox:~$ cd project_sistem_operasi_D
 dita@dita-VirtualBox:~/project_sistem_operasi_D$
+
+#Membuat Direktori Lagi didalam direktori yang telah kita buat tadi
 dita@dita-VirtualBox:~/project_sistem_operasi_D$ mkdir src doc data
+
+#Membuat File
 dita@dita-VirtualBox:~/project_sistem_operasi_D$ touch README.md src/main.sh
+
+#Menampilkan ukuran dalam format yang mudah dibaca
 dita@dita-VirtualBox:~/project_sistem_operasi_D$ du -sh
-16K
